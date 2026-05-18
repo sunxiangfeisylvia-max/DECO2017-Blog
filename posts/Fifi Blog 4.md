@@ -20,7 +20,7 @@ The second wireframe focuses more on the hub itself. This made me think about da
 ![Events and activities wireframe](../assets/wireframe3.png)
 
 The third wireframe helped me separate event data from normal post data. Events need a title, date, time, location, category, format, and saved status. These are different from a normal post because users may filter them, save them, and view them through a schedule or calendar.
-![Q&A and resources wireframe](/assets/wireframe4.png)
+![Q&A and resources wireframe](assets/wireframe4.png)
 
 The fourth wireframe is about Q&A and resources. This was useful because it brought in questions, resources, tags, answered status, and upload actions. It also showed that tags could belong to more than one type of content, so they should probably be separate from the question or resource itself.
 
