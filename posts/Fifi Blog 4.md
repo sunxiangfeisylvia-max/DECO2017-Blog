@@ -24,7 +24,7 @@ The third wireframe helped me separate event data from normal post data. Events 
 
 The fourth wireframe is about Q&A and resources. This was useful because it brought in questions, resources, tags, answered status, and upload actions. It also showed that tags could belong to more than one type of content, so they should probably be separate from the question or resource itself.
 
-After annotating the wireframes, I wrote the DDDs. I used the three-column format from the lecture: attribute, description, and example value. I wrote DDDs for the main entities: Member, Hub, HubMembership, Post, Event, Question, Resource, and Tag.
+After annotating the wireframes, I wrote the DDDs. I used the three-column format from the lecture: attribute, description, and example value. I wrote DDDs for the main entities: Member, Hub, HubMembership, Post, Event, Question, Resource, and Tags.
 ![DDD part 1](assets/ddd.png)
 ![DDD part 2](assets/ddd2.png)
 
