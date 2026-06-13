@@ -17,10 +17,10 @@ For our final group project, we built TableTogether, a restaurant meetup hub for
 ## 1. Performance and Technical Behaviour
 Overall, TableTogether performed reliably during our technical testing. The strongest evidence for this was the automated test suite. Our tests covered the main flows of the application, including authentication, the homepage, filters, meetup details, meetup creation, join/leave behaviour, and file upload handling. The test run passed 203 out of 203 assertions, with 11 out of 11 test suites passing. This gave me confidence that the core server-side behaviour was stable.
 
-![Automated test result showing 203/203 passing assertions and 11/11 passing test suites.](../assets/automated-test-result.png)
+![Automated test result showing 203/203 passing assertions and 11/11 passing test suites.](assets/automated-test-result.png)
 *Figure 1: Automated test result*
 
-![Linting result showing TypeScript ESLint and Stylelint checks completing without reported errors.](../assets/linting-result.png)
+![Linting result showing TypeScript ESLint and Stylelint checks completing without reported errors.](assets/linting-result.png)
 *Figure 2: Linting result*
 
 **Evidence Table 1: Automated Technical Checks**
@@ -36,9 +36,9 @@ One technical strength of the prototype is that the core logic is simple and app
 
 The Lighthouse results also showed strong technical performance. The mobile Lighthouse result showed Performance 96, Accessibility 95, Best Practices 100, and SEO 90. The desktop Lighthouse result showed Performance 100, Accessibility 95, Best Practices 100, and SEO 90. These scores suggest that the prototype is lightweight and responsive, especially because it does not rely on a large client-side framework.
 
-![Mobile Lighthouse audit result for the login page: Performance 96, Accessibility 95, Best Practices 100, SEO 90.](../assets/mobile.png)
+![Mobile Lighthouse audit result for the login page: Performance 96, Accessibility 95, Best Practices 100, SEO 90.](assets/mobile.png)
 *Figure 3: Mobile Lighthouse audit result*
-![Desktop Lighthouse audit result for the login page: Performance 100, Accessibility 95, Best Practices 100, SEO 90.](../assets/desktop.png)
+![Desktop Lighthouse audit result for the login page: Performance 100, Accessibility 95, Best Practices 100, SEO 90.](assets/desktop.png)
 *Figure 4: Desktop Lighthouse audit result*
 
 **Evidence Table 2: Lighthouse Results**
@@ -50,7 +50,7 @@ The Lighthouse results also showed strong technical performance. The mobile Ligh
 
 We also created a broader Lighthouse evidence board comparing the login page and homepage. This was useful because it showed that performance remained high beyond just one page. The homepage result recorded Performance 99, Accessibility 96, Best Practices 78, and SEO 91. The lower Best Practices score was caused by local HTTP/HTTPS trust and safety warnings, not by a broken user-facing feature. This distinction matters: the local prototype performed well, but a production deployment should use HTTPS and redirect HTTP traffic securely.
 
-![Lighthouse audit evidence board comparing login page and homepage results, including the Best Practices limitation caused by local HTTP/HTTPS warnings.](../assets/lighthouse.png)
+![Lighthouse audit evidence board comparing login page and homepage results, including the Best Practices limitation caused by local HTTP/HTTPS warnings.](assets/lighthouse.png)
 *Figure 5: Lighthouse audit evidence board*
 
 A limitation of our performance evaluation is that we tested with a small prototype dataset. I can say that TableTogether performs well for the intended demo scale, but I cannot claim it would perform equally well with hundreds or thousands of meetups. If we continued development, I would add pagination, database indexing, image loading controls, and testing with larger seeded datasets.
@@ -60,12 +60,12 @@ The user experience is strongest in the core browsing flow. The homepage clearly
 
 The filter panel is one of the most successful parts of the interface. Users can narrow meetups by payment mode, availability, preferred participant gender, and time window. These filters match real user concerns. For example, someone may care about whether a meetup has open spots, whether the payment expectation is clear, or whether the timing works for them. The filtering interaction helps users make decisions without needing to open every meetup one by one.
 
-![Core browsing and filtering evidence showing login/profile selection, homepage overview, filter options, and safety guidance beside the browsing flow.](../assets/core-browsing.png)
+![Core browsing and filtering evidence showing login/profile selection, homepage overview, filter options, and safety guidance beside the browsing flow.](assets/core-browsing.png)
 *Figure 6: Core browsing and filtering evidence*
 
 We also evaluated usability through a short peer testing session. The tester was asked to sign in, browse meetups, use filters, open details, and move through the meetup decision flow. The feedback was mostly positive. The tester understood the purpose of the app quickly and found the main browsing path clear. The main friction was that some information-heavy sections required scrolling, and the tester expected the filter result count to update more visibly after applying filters.
 
-![Peer user testing](../assets/peer-testing.jpg)
+![Peer user testing](assets/peer-testing.jpg)
 *Figure 7: Peer user testing*
 
 **Evidence Table 3: User Testing Summary**
